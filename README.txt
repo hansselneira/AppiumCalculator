@@ -3,7 +3,9 @@
 - Create system enviroment variable of JAVA_HOME and add it to the path.
 - Install Android Studio.
 - Create user enviroment variable ANDROID_HOME loking for the Sdk in AppData/Local.
-- Create two devices in the emulator of Android Studio. 
+- Create two devices in the emulator of Android Studio.
+One should have the name: Pixel 3
+The other can have any name, it is only for using with Appium Inspector 
 - Install Appium Inspector.
 - Run the command npm install appium@^2.0.0-beta.27
 - Run the command npm i -g appium-doctor, of something necessary is not present go 
@@ -50,5 +52,6 @@ services: [['appium', {
         },
         logPath: './'
       }]],
-- 
+- Finnaly for runing the test, from the source code and in the terminal, run the command:
+npx wdio 
 
